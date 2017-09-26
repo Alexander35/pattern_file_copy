@@ -33,17 +33,3 @@ class SMB_Worker:
 			return attributes
 		except Exception as exc:
 			self.logger.error('get_attributes Error : {}'.format(exc))		
-
-def main():
-	SMBW = SMB_Worker('aivanov', 'Nailya_W4_L', 'w1299', 'r28-GKN-P-AS0')
-	# filelist = SMBW.get_file_list('/ais/Docs/request/28-0-1-63_3001_2017/28-0-1-63_3001_2017-1/2608319')
-	# print('list \n {} \n'.format(filelist[2].isDirectory))
-		# __dir__()))
-		# file_size))
-		# __dir__()))
-	filelist = SMBW.get_file_list('/ais/Docs/request/28-0-1-63_3001_2017/28-0-1-63_3001_2017-1')	
-	print('list \n {} \n'.format(filelist))
-	SMBW.get_attributes(filelist)
-
-if __name__ == '__main__':
-	main()

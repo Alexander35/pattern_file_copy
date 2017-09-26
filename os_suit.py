@@ -47,7 +47,4 @@ class OS_Suit:
 				]	
 			return attributes
 		except Exception as exc:
-			self.logger.error('get_filelist_with_attributes error : {}'.format(exc)) 		
-
-	def erase_temp(self):
-		pass				
+			self.logger.error('get_filelist_with_attributes error : {}'.format(exc))		
