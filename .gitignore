@@ -1,0 +1,3 @@
+samples/*
+*.ini
+__pycache__/*
